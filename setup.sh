@@ -13,26 +13,23 @@ read -p "Press 'enter' to continue..."
 # clear
 clear
 
-# Define function untuk memilih arsitektur 
-function enter_arsitektur {
+# Masukkan pilihan arsitektur, jika salah loop memakai while true; do
+while true; do
 echo "Masukkan arsitektur perangkat"
 echo "(Contoh : 'amd64' atau 'arm64')"
 echo ""
 read -p "Tipe arsitektur : " arsitektur
-}
 
-# Panggil fungsi arsitektur
-enter_arsitektur
-
-echo arsitektur
-
-# else if format masukkan
-if [ arsitektur == "arm64" ]
-    then
-    echo "adalah arm"
-elif [ arsitektur == "amd64" ]
-    then
-    echo "adalah amd"
+# if-else
+if [ "$arsitektur" == "arm64" ]; then
+install_golang = "https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-golang-arm64.sh"
+break
+elif [ "arsitektur" == "amd64" ]; then
+install_golang = "https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-golang-amd64.sh"
+break
 else
-    echo "entah"
+echo "Format salah, silahkan masukkan ulang!"
+clear
 fi
+
+echo install_golang
