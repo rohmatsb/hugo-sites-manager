@@ -13,7 +13,13 @@ read -p "Press 'enter' to continue..."
 # clear
 clear
 
-# Print pesan untuk memilih arsitektur 
+# Define function untuk memilih arsitektur 
+function enter_arsitektur {
 echo "Masukkan arsitektur perangkat"
 echo "(Contoh : 'amd64' atau 'arm64')"
+echo ""
 read -p "Tipe arsitektur : " arsitektur
+}
+
+# Panggil fungsi arsitektur
+enter_arsitektur()
