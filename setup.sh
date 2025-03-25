@@ -24,8 +24,10 @@ read -p "Tipe arsitektur : " arsitektur
 # Panggil fungsi arsitektur
 enter_arsitektur
 
+echo arsitektur
+
 # else if format masukkan
-if [ arsitektur == "arm64"]
+if [ arsitektur == "arm64" ]
     then
     echo "adalah arm"
 elif [ arsitektur == "amd64" ]
