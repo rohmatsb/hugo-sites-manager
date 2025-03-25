@@ -14,6 +14,6 @@ read -p "Press 'enter' to continue..."
 clear
 
 # Print pesan untuk memilih arsitektur 
-echo "Masukkan arsitektur perangkat :"
+echo "Masukkan arsitektur perangkat"
 echo "(Contoh : 'amd64' atau 'arm64')"
-read arsitektur
+read arsitektur -p "Tipe arsitektur :"
