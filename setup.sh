@@ -10,3 +10,10 @@ echo "Welcome to easier hugo sites management. Worry less, and focus on your wri
 # Confirmation message to continue
 read -p "Press 'enter' to continue..."
 
+# clear
+clear
+
+# Print pesan untuk memilih arsitektur 
+echo "Masukkan arsitektur perangkat :"
+echo "(Contoh : 'amd64' atau 'arm64')"
+read arsitektur
