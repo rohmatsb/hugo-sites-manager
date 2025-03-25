@@ -32,4 +32,4 @@ echo "Format salah, silahkan masukkan ulang!"
 clear
 fi
 
-echo install_golang
+echo "$install_golang"
