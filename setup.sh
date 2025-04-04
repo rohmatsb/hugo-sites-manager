@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Bersihkan layar
+clear
+
 # Print pesan welcome
 echo "=================="
 echo "Hugo Sites Manager"

@@ -7,6 +7,9 @@ apt update
 # Install wget dan curl terlebih dahulu
 apt install wget curl -y
 
+# bersihkan layar
+clear
+
 # Validasi arsitektur 
 while true; do
 echo "Masukkan arsitektur perangkat"
