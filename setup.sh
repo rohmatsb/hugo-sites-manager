@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# Define color
+RED='\e[31m'
+GREEN='\e[32m'
+YELLOW='\e[33m'
+BLUE='\e[34m'
+MAGENTA='\e[35m'
+CYAN='\e[36m'
+RESET='\e[0m'
+
 # Bersihkan layar
 clear
 
@@ -11,6 +20,7 @@ echo ""
 echo "Welcome to easier hugo sites management. Worry less, and focus on your writings."
 
 # Confirmation message to continue
+echo ""
 read -p "Press 'enter' to continue..."
 
 # clear

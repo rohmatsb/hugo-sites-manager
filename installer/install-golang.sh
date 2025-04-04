@@ -1,3 +1,12 @@
+# Define color
+RED='\e[31m'
+GREEN='\e[32m'
+YELLOW='\e[33m'
+BLUE='\e[34m'
+MAGENTA='\e[35m'
+CYAN='\e[36m'
+RESET='\e[0m'
+
 # Define Variable
 versi_go=1.24.1
 
@@ -24,7 +33,8 @@ elif [ "$arsitektur" == "arm64" ]; then
     arch="arm64"
     break
 else
-    echo "Format salah! Atau arsitektur tidak didukung? Silahkan masukkan ulang..."
+    echo ""
+    echo "$REDFormat salah! Atau arsitektur tidak didukung? Silahkan masukkan ulang...$RESET"
     sleep 3
     clear
 fi
