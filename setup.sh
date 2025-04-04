@@ -13,22 +13,11 @@ read -p "Press 'enter' to continue..."
 # clear
 clear
 
-# Masukkan pilihan arsitektur, jika salah loop memakai while true; do
-while true; do
-echo "Masukkan arsitektur perangkat"
-echo "(Contoh : 'amd64' atau 'arm64')"
-echo ""
-read -p "Tipe arsitektur : " arsitektur
+# update dulu
+apt update
 
-if [ "$arsitektur" == "amd64" ]; then
-    install_golang="https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-golang-amd64.sh"
-    break
-elif [ "$arsitektur" == "arm64" ]; then
-    install_golang="https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-golang-arm64.sh"
-    break
-else
-    echo "Format salah! Silahkan masukkan ulang"
-    sleep 3
-    clear
-fi
-done
+# install wget dan curl
+apt install wget curl -y
+
+# wget script install Golang
+wget 
