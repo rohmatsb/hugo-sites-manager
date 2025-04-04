@@ -20,4 +20,7 @@ apt update
 apt install wget curl -y
 
 # wget script install Golang
-wget 
+wget https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-golang.sh
+chmod 777 install-golang.sh
+./install-golang.sh
+rm -rf ./install-golang.sh
