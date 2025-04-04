@@ -1,14 +1,37 @@
+# Define Variable
+versi_go=1.24.1
+
 # Update repo terlebih dahulu
 apt update
 
 # Install wget dan curl terlebih dahulu
 apt install wget curl -y
 
+# Validasi arsitektur 
+while true; do
+echo "Masukkan arsitektur perangkat"
+echo "(Contoh : 'amd64' atau 'arm64')"
+echo ""
+read -p "Tipe arsitektur : " arsitektur
+
+if [ "$arsitektur" == "amd64" ]; then
+    arch="amd64"
+    break
+elif [ "$arsitektur" == "arm64" ]; then
+    arch="arm64"
+    break
+else
+    echo "Format salah! Atau arsitektur tidak didukung? Silahkan masukkan ulang..."
+    sleep 3
+    clear
+fi
+done
+
 # Download golang
-wget https://go.dev/dl/go1.24.1.linux-amd64.tar.gz
+wget https://go.dev/dl/go$versi_go.linux-$arch.tar.gz
 
 # Hapus instalasi golang sebelumnya & ekstrak golang
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.24.1.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf go$versi_go.linux-$arch.tar.gz
 
 # Export path
 export PATH=$PATH:/usr/local/go/bin
