@@ -28,5 +28,7 @@ elif [ "$arsitektur" == "arm64" ]; then
     break
 else
     echo "Format salah! Silahkan masukkan ulang"
+    sleep 3
+    clear
 fi
 done
