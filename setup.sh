@@ -21,10 +21,10 @@ echo ""
 read -p "Tipe arsitektur : " arsitektur
 
 if [ "$arsitektur" == "amd64" ]; then
-    install_golang="https://raw.githubusercontent>
+    install_golang="https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-golang-amd64.sh"
     break
 elif [ "$arsitektur" == "arm64" ]; then
-    install_golang="https://raw.githubusercontent>
+    install_golang="https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-golang-arm64.sh"
     break
 else
     echo "Format salah! Silahkan masukkan ulang"
