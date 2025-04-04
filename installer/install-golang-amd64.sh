@@ -41,9 +41,8 @@ export PATH=$PATH:/usr/local/go/bin
 echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.profile
 
 # Hapus file tidak terpakai
-rm -rf go1.24.1.linux-amd64.tar.gz
+rm -rf go$versi_go.linux-$arch.tar.gz
 
 # Bersihkan layar dan menampilkan versi go yang terinstall
 clear
 go version
-
