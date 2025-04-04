@@ -19,17 +19,3 @@ echo "Masukkan arsitektur perangkat"
 echo "(Contoh : 'amd64' atau 'arm64')"
 echo ""
 read -p "Tipe arsitektur : " arsitektur
-
-# if-else
-if [ "$arsitektur" == "arm64" ]; then
-install_golang = "https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-golang-arm64.sh"
-break
-elif [ "arsitektur" == "amd64" ]; then
-install_golang = "https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-golang-amd64.sh"
-break
-else
-echo "Format salah, silahkan masukkan ulang!"
-clear
-fi
-
-echo "$install_golang"
