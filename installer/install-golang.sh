@@ -34,7 +34,7 @@ elif [ "$arsitektur" == "arm64" ]; then
     break
 else
     echo ""
-    echo $RED "Format salah! Atau arsitektur tidak didukung? Silahkan masukkan ulang..." $RESET
+    echo -e "${RED}Format salah! Atau arsitektur tidak didukung? Silahkan masukkan ulang...${RESET}"
     sleep 3
     clear
 fi
