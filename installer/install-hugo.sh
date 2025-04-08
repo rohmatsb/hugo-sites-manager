@@ -11,3 +11,9 @@ export PATH=$PATH:/usr/local/go/bin
 
 # Build dan install hugo standard dari source
 go install github.com/gohugoio/hugo@latest
+
+# clear
+clear
+
+# Cek versi hugo terinstall
+hugo version
