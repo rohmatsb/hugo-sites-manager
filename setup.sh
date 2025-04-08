@@ -32,8 +32,14 @@ apt update
 # install wget dan curl
 apt install wget curl -y
 
-# wget script install Golang
+# wget script install Golang & execute 
 wget https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-golang.sh
 chmod 777 install-golang.sh
 ./install-golang.sh
 rm -rf ./install-golang.sh
+
+# wget script install Hugo & execute
+wget https://raw.githubusercontent.com/rohmatsb/hugo-sites-manager/refs/heads/main/installer/install-hugo.sh
+chmod 777 install-hugo.sh
+./install-hugo.sh
+rm -rf ./install-hugo.sh
