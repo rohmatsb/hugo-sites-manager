@@ -7,7 +7,7 @@ clear
 apt update
 
 # Install paket yang dibutuhkan 
-apt install git build-essential -y
+apt install git -y
 
 # Export go ulang, agar tidak perlu restart session
 export PATH=$PATH:/usr/local/go/bin
