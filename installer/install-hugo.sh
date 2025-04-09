@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# bersihkan layar
+clear
+
 # Update repo dulu
 apt update
 
@@ -15,5 +18,12 @@ go install github.com/gohugoio/hugo@latest
 # clear
 clear
 
-# Cek versi hugo terinstall
+# Pindahkan hugo ke /usr/bin
+cd #kembali ke home folder
+cd go/bin
+mv hugo /usr/bin
+
+# cek versi hugo
 hugo version
+sleep 3
+clear
